@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="https://cdn.jsdelivr.net/npm/zoid@9.0.36/dist/zoid.js"></script>
+        <script src="http://localhost:8001/card-form.js"></script>
+    </head>
+    <body>
+        <div id="formSpot"></div>
+        <script>
+            CardForm({
+                cardNumber: '1234-5678',
+                onUpdate: () => alert('Update!')
+            }).render('#formSpot');
+        </script>
+    </body>
+</html>
